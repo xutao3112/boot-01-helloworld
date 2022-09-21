@@ -18,8 +18,7 @@ public class UserServiceImpl implements UserService {
     UserMapper userMapper;
     @Override
     public User getUserById(String name) {
-        System.out.println("hello1");
-        System.out.println("hello2 test");
+        System.out.println("hello3");
         return userMapper.getuser(name);
     }
 }
