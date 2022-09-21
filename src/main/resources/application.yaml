@@ -1,0 +1,42 @@
+person:
+  userName: zhangsan
+  boss: true
+  brith: 2020/12/3
+  age: 23
+#  #interests: [篮球,足球]
+  interests:
+    - 篮球
+    - 足球
+    - 电脑
+  animal: [小猫,小狗]
+  score: {english: 34,math: 42}
+  salarys:
+    - 243
+    - 2342
+    - 5233
+    - 234
+  pet:
+    name: xiaomao
+    weight: 24
+  allPets:
+    sick:
+      - {name: sf,weight: 34.5}
+      - name: df
+        weight: 345.4
+    health:
+      - name: dfd
+        weight: 5.4
+server:
+  port: 8080
+
+spring:
+  datasource:
+    url: jdbc:mysql://localhost:3306/world?useSSL=false&characterEncoding=utf-8&useUnicode=true&serverTimezone=Asia/Shanghai
+    username: root
+    password: root
+    driver-class-name: com.mysql.cj.jdbc.Driver
+mybatis:
+  config-location: classpath:mybatis/mybatis-config.xml
+  mapper-locations: classpath:mybatis/mapper/*.xml
+  configuration:
+    map-underscore-to-camel-case: false
